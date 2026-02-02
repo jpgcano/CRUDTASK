@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin Principal",
+      "email": "admin@restorapp.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Juan Perez",
+      "email": "juan@correo.com",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "5",
+      "name": "Diseñar Dashboard UI",
+      "assignee": "Alex Morgan",
+      "status": "Completed",
+      "priority": "Medium",
+      "due_date": "2023-10-20",
+      "category": "Design",
+      "description": null
+    },
+    {
+      "id": "4",
+      "name": "Implementar Auth con JWT",
+      "assignee": "Alex Morgan",
+      "status": "In Progress",
+      "priority": "High",
+      "due_date": "2023-10-25",
+      "category": "Development",
+      "description": "Implementar autenticación usando JSON Web Tokens para asegurar las rutas de la aplicación."
+    },
+    {
+      "id": "3",
+      "name": "Optimizar Assets de Imágenes",
+      "assignee": "Alex Morgan",
+      "status": "Pending",
+      "priority": "Low",
+      "due_date": "2023-10-30",
+      "category": "Development",
+      "description": null
+    },
+    {
+      "id": "1",
+      "name": "Design System Update",
+      "assignee": "Alex Morgan",
+      "status": "In Progress",
+      "priority": "High",
+      "due_date": "2024-05-15",
+      "category": "Design",
+      "description": null
+    },
+    {
+      "id": "2",
+      "name": "Fix Sidebar Layout",
+      "assignee": "Alex Morgan",
+      "status": "Pending",
+      "priority": "Medium",
+      "due_date": "2024-05-18",
+      "category": "Development",
+      "description": null
+    },
+    {
+      "id": "4951",
+      "name": "prueba",
+      "assignee": "Juan Perez",
+      "status": "Pending",
+      "priority": "Medium",
+      "due_date": "2026-02-20",
+      "category": "History",
+      "description": "pureba de que si guarda las tareasd"
+    },
+    {
+      "name": "prueba 35",
+      "assignee": "Juan Perez",
+      "priority": "low",
+      "dueDate": "2026-03-05",
+      "status": "in-progress",
+      "category": "Mathematics",
+      "description": "asdasdad",
+      "id": "d4e8"
+    },
+    {
+      "id": "3bd5",
+      "name": "andres anda obserndo",
+      "assignee": "Juan Perez",
+      "priority": "high",
+      "dueDate": "2026-01-30",
+      "status": "pending",
+      "category": "History",
+      "description": "anda de chismoso"
+    },
+    {
+      "id": "a681",
+      "name": "prueba usuario",
+      "assignee": "Juan Perez",
+      "priority": "high",
+      "dueDate": "2026-02-27",
+      "status": "completed",
+      "category": "Mathematics",
+      "description": "descanso"
+    }
+  ]
+}

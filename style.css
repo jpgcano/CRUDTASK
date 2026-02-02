@@ -1,0 +1,154 @@
+/* --- ESTILOS CRÍTICOS Y ALTAMENTE ESPECÍFICOS DEL DASHBOARD --- */
+
+/* Asegura que el contenedor principal ocupe todo el espacio */
+.dashboard-view {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* El contenido principal que crece al lado del aside */
+.dashboard-view .main {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #f4f6f9; /* Color de fondo claro general de la app */
+}
+
+/* Encabezado Superior */
+.dashboard-view .dashboard__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.dashboard-view .dashboard__header-breadcrumb { display: flex; align-items: center; }
+.dashboard-view .dashboard__header-breadcrumb p { color: #888; margin-left: 10px; }
+.dashboard-view .dashboard__header-actions { display: flex; align-items: center; gap: 15px; }
+.dashboard-view .dashboard__header-actions img:first-child { width: 20px; cursor: pointer; }
+
+/* Sección de Título y Botón */
+.dashboard-view .dashboard__actions-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-view .dashboard__actions-section h1 { font-size: 1.5em; margin-bottom: 5px; }
+.dashboard-view .dashboard__actions-section p { color: #888; }
+
+
+/* --- STATS CARDS (Tarjetas) --- */
+.dashboard-view .dashboard__stats-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.dashboard-view .dashboard__card-conteiner {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.dashboard-view .dashboard__card-conteiner h2 {
+    font-size: 1em;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.dashboard-view .dashboard__card-conteiner > p {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dashboard-view .dashboard__card-conteiner > div p {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    color: #28a745; /* Verde para "On track" */
+}
+
+/* Colores de estado específicos */
+.dashboard-view .dashboard__card-conteiner:nth-child(3) p { color: #ff9800; /* Naranja para Pending */ }
+.dashboard-view .dashboard__card-conteiner:nth-child(4) p { color: #007bff; /* Azul para Progress */ }
+
+
+/* --- SEARCH BAR AND FILTERS --- */
+.dashboard-view .dashboard__filters-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.dashboard-view .search_task { position: relative; flex-grow: 1; }
+.dashboard-view .search_task input { width: 100%; padding: 10px 40px; border-radius: 5px; border: 1px solid #ccc; }
+.dashboard-view .search_task img { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 16px; }
+
+.dashboard-view .filter-label { 
+    padding: 8px 15px; border-radius: 5px; cursor: pointer; background-color: #fff; border: 1px solid #ccc; font-size: 0.9em;
+}
+
+.dashboard-view .filter-label[data-filter="all"] {
+    background-color: #007bff; color: white; border-color: #007bff;
+}
+
+/* --- TASKS TABLE --- */
+.dashboard-view .task-list {
+    background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.dashboard-view .task-list table { width: 100%; border-collapse: collapse; text-align: left; }
+.dashboard-view .task-list th, .dashboard-view .task-list td { padding: 15px; border-bottom: 1px solid #f0f0f0; }
+.dashboard-view .task-list th { font-weight: 600; color: #888; text-transform: uppercase; font-size: 0.8em; }
+
+.dashboard-view .edit-btn, .dashboard-view .delete-btn { margin-right: 10px; cursor: pointer; }
+.dashboard-view .edit-btn { color: #007bff; }
+.dashboard-view .delete-btn { color: #dc3545; background: none; border: none; padding: 0; }
+
+/* --- ESTILOS ESPECÍFICOS DEL MYTASKS (Prefijados con .mytasks-view) --- */
+/* --- ESTILOS ESPECÍFICOS DEL MYTASKS (Asegura la clase .mytasks-view en el HTML padre) --- */
+
+.mytasks-view .main {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+/* Encabezado Superior */
+.mytasks-view .mytasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.mytasks-view .mytasks-header-breadcrumb { display: flex; align-items: center; }
+.mytasks-view .mytasks-header-breadcrumb p { color: #888; margin-left: 10px; }
+.mytasks-view .user { display: flex; align-items: center; gap: 10px; }
+
+/* Sección de Título y Botón */
+.mytasks-view .mytasks-actions-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.mytasks-view .mytasks-stats-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+/* ... (resto de estilos de las tarjetas, filtros y tabla usando el prefijo .mytasks-view ) ... */
